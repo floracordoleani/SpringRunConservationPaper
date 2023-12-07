@@ -322,7 +322,7 @@ dev.off()
 (EscapMillInund_Fig <- ggplot(EscapInund %>% filter(PopID=="Mill Creek"),
                               aes(x=Index,y=LagTotal,label=WY,col=WY_type))+
     ggtitle('Mill Creek')+
-    xlab('Mean floodplain inundated proportion')+ ylab('')+
+    xlab('Butte Creek floodplain inundated proportion')+ ylab('')+
     geom_smooth(color = 'black',method="lm") +
     stat_cor(p.accuracy = 0.001, r.accuracy = 0.01, 
              aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")),
@@ -366,7 +366,7 @@ dev.off()
 
 
 png("Figures/Fig3.png", 
-    family = "serif", width = 17, height= 5, units = "in", res =300)
+    family = "serif", width = 18, height= 5, units = "in", res =300)
 
 ggarrange(EscapButteInund_Fig,EscapMillInund_Fig,EscapDeerInund_Fig,
           nrow=1,common.legend = TRUE, legend="top")
