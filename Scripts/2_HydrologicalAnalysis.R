@@ -312,7 +312,8 @@ dev.off()
     theme_bw()+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank(), axis.line = element_line(colour = "black"),
-          text = element_text(size=20),
+          text = element_text(size=18),
+          plot.title =element_text(size=18, face='bold'),
           legend.position="none")+
     scale_color_manual(values = c("red3","orange","seagreen","turquoise3", "royalblue1"),
                        breaks=c('C', 'D', 'BN','AN','W'))+
@@ -334,7 +335,8 @@ dev.off()
     theme_bw()+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank(), axis.line = element_line(colour = "black"),
-          text = element_text(size=20),
+          text = element_text(size=18),
+          plot.title =element_text(size=18, face='bold'),
           legend.position="none")+
     scale_color_manual(values = c("red3","orange","seagreen","turquoise3", "royalblue1"),
                        breaks=c('C', 'D', 'BN','AN','W'))+
@@ -356,7 +358,8 @@ dev.off()
     theme_bw()+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
           panel.background = element_blank(), axis.line = element_line(colour = "black"),
-          text = element_text(size=20),
+          text = element_text(size=18),
+          plot.title =element_text(size=18, face='bold'),
           legend.position="right")+
     scale_color_manual(values = c("red3","orange","seagreen","turquoise3", "royalblue1"),
                        breaks=c('C', 'D', 'BN','AN','W'))+
